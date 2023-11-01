@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "524417570120",
+    "project_id": "notee-23f4f",
+    "storage_bucket": "notee-23f4f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:524417570120:android:417743a07ee2c2f96a8f7d",
+        "android_client_info": {
+          "package_name": "ng.com.claudio.notee"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAk5ZUeZkzSDHzZIHHaHLLhwCH8Bzmzwbo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

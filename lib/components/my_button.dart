@@ -4,9 +4,11 @@ import 'package:google_fonts/google_fonts.dart';
 class MyButton extends StatelessWidget {
   const MyButton({
     required this.onTap,
+    required this.buttonText,
     super.key});
 
   final Function()? onTap;
+  final String buttonText;
 
   @override
   Widget build(BuildContext context) {
@@ -33,7 +35,7 @@ class MyButton extends StatelessWidget {
             child: Padding(
               padding: const EdgeInsets.only(top: 10),
               child: Text(
-                'Sign in',
+                buttonText,
                 textAlign: TextAlign.center,
                 style: GoogleFonts.urbanist(textStyle: const TextStyle(
                   color: Colors.white,

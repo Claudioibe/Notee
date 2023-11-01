@@ -1,3 +1,4 @@
+import 'package:notee/screens/auth_screen.dart';
 import 'package:notee/screens/home_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -21,7 +22,7 @@ class _SplashScreenState extends State<SplashScreen>
     Future.delayed(const Duration(seconds: 4), () {
       Navigator.of(context).pushReplacement(
         MaterialPageRoute(
-          builder: (_) =>   LoginPage(),
+          builder: (_) =>   const AuthPage(),
         ),
       );
     });

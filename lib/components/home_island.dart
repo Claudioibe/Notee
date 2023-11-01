@@ -1,16 +1,21 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class HomeIsland extends StatelessWidget {
-  const HomeIsland({super.key});
+   HomeIsland({super.key});
+
+  final user = FirebaseAuth.instance.currentUser;
 
   @override
+
   Widget build(BuildContext context) {
+
     return Center(
               child: Container(
                 margin: const EdgeInsets.only(top: 30),
                 padding: const EdgeInsets.all(10),
-                width: 331,
+                width: 390,
                 height: 182,
                 decoration: ShapeDecoration(
                   color: const Color(0xFF2C2C2C),
@@ -33,7 +38,7 @@ class HomeIsland extends StatelessWidget {
                       children: [
                         Padding(
                           padding: const EdgeInsets.only(top: 40),
-                          child: Text('Hi User ',
+                          child: Text("Hi User",
                               style: GoogleFonts.urbanist(
                                 textStyle: const TextStyle(
                                   color: Colors.white,

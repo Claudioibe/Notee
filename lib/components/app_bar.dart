@@ -2,13 +2,25 @@ import 'package:flutter/material.dart';
 import 'package:notee/components/urban_text.dart';
 
 class BaseAppBar extends StatelessWidget implements PreferredSizeWidget{
-  const BaseAppBar({super.key});
+  const BaseAppBar({
+    required this.icontoshow,
+    required this.onPressed,
+    required this.iconColor,
+    required this.bgColor,
+    
+    super.key});
+
+  final Icon icontoshow;
+  final Function()? onPressed;
+  final Color iconColor;
+  final Color bgColor;
+
 
   @override
   Widget build(BuildContext context) {
     return AppBar(
-          elevation: 0,
-          backgroundColor: Colors.white,
+          elevation: 0, 
+          backgroundColor: bgColor,
           title: Container(
             padding: const EdgeInsets.only(left: 10, top: 10, bottom: 10),
             child: const UrbanText(
@@ -21,11 +33,8 @@ class BaseAppBar extends StatelessWidget implements PreferredSizeWidget{
           centerTitle: false,
           actions: [
             IconButton(
-              icon: const Icon(
-                Icons.settings_outlined,
-                color: Colors.black,
-              ),
-              onPressed: () {},
+              icon: icontoshow,color: iconColor,
+              onPressed: onPressed,
             ),
           ],
         );
